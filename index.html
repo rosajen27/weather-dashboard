@@ -2,22 +2,108 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/style.css">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="Assets/style.css">
-
-  <title>Weather API</title>
+    <title>Weather API</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-info">
+        <h1 class="text-white">Weather Dashboard</h1>
+    </nav>
 
+    <div class="container-fluid">
 
+        <!-- Search Div-->
+        <div class="row">
+            <div id="search-box" class="col-4">
+                <h2>Search for a City:</h2>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="Assets/script.js"></script>
+                <!-- Search Bar -->
+                <div class="input-group mb-3">
+                    <form id="search-form" class="form-inline">
+                    <input id="search-input" type="text" class="form-control">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                    </form>
+                </div>
+
+                <!--List of Cities-->
+                <ul class="list-group">
+                    <li class="list-group-item">Austin</li>
+                    <li class="list-group-item">Chicago</li>
+                    <li class="list-group-item">New York</li>
+                    <li class="list-group-item">Orlando</li>
+                    <li class="list-group-item">San Francisco</li>
+                    <li class="list-group-item">Seattle</li>
+                    <li class="list-group-item">Denver</li>
+                    <li class="list-group-item">Atlanta</li>
+                </ul>
+            </div>
+
+            <!-- Weather Div-->
+            <div id="weather-box" class="col-8">
+
+                <!-- Searched City Current Weather Div-->
+                <div id="city-box"></div>
+
+                <!-- Five Day Forecast-->
+                <div id="five-day-box">
+                    <h4>5-Day Forecast:</h4>
+                    <div class="row five-day-row">
+
+                        <!--Empty Div for spacing-->
+                        <div class="col-1"></div>
+
+                        <!-- Five Day Weather Cards-->
+                        <div class="col-2 text-center">
+                            <div class="card">
+                                <div id="div0" class="card-body text-white bg-info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="card">
+                                <div id="div1" class="card-body text-white bg-info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="card">
+                                <div id="div2" class="card-body text-white bg-info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="card">
+                                <div id="div3" class="card-body text-white bg-info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="card">
+                                <div id="div4" class="card-body text-white bg-info">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Empty Div for spacing-->
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-info"><br><br></div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="Assets/script.js"></script>
 
 </body>
 </html>
