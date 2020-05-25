@@ -1,0 +1,44 @@
+#search-box {
+    background-color:#F8F8F8;
+    padding: 20px 30px;
+    border-right: 1px solid #333;
+    height: 100vh;
+}
+
+.list-group {
+    padding-top: 20px;
+}
+
+#weather-box {
+    padding: 20px 30px;
+}
+
+#city-box {
+    height: 50%;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px 30px;
+}
+
+#five-day-box {
+    height: 50%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.five-day-row {
+    padding-top: 20px;
+}
+
+.card-body {
+    font-weight: bold;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.card {
+    border: 0px;
+}
