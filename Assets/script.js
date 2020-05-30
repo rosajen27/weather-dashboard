@@ -101,7 +101,10 @@ $("#search-button").on("click", function(event) {
 
         // Constructing HTML containing the five day forecast for searched city
         // day one
-        var date0 = $("<p>").text(response.list[0].dt_txt);
+        var date0 = response.list[0].dt_txt;
+        var slicedate0 = date0.slice(5, 10);
+
+        var date0 = $("<p>").text(slicedate0);
         var weatherIcon0 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + ".png");
         var weatherType0 = $("<p>").text(response.list[0].weather[0].main);
         // kelvin to °F
@@ -109,14 +112,17 @@ $("#search-button").on("click", function(event) {
         var tempHighF0 = (tempHighInt0 * 9/5) - 459.67;
         var cityHighTemp0 = $("<p>").text(Math.floor(tempHighF0) + " °F");
 
-        var humidity0 = $("<p>").text(response.list[0].main.humidity + "%");
+        var humidity0 = $("<p>").text("Humidity: " + response.list[0].main.humidity + "%");
 
   // Empty the contents of the city-box div, append the current weather of searched city
   $("#div0").empty();
   $("#div0").append(date0, weatherIcon0, weatherType0, cityHighTemp0, humidity0); 
 
         // day two
-        var date1 = $("<p>").text(response.list[8].dt_txt);
+        var date1 = response.list[8].dt_txt;
+        var slicedate1 = date1.slice(5, 10);
+
+        var date1 = $("<p>").text(slicedate1);
         var weatherIcon1 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[8].weather[0].icon + ".png");
         var weatherType1 = $("<p>").text(response.list[8].weather[0].main);
         // kelvin to °F
@@ -124,7 +130,7 @@ $("#search-button").on("click", function(event) {
         var tempHighF1 = (tempHighInt1 * 9/5) - 459.67;
         var cityHighTemp1 = $("<p>").text(Math.floor(tempHighF1) + " °F");
 
-        var humidity1 = $("<p>").text(response.list[8].main.humidity + "%");
+        var humidity1 = $("<p>").text("Humidity: " + response.list[8].main.humidity + "%");
 
   // Empty the contents of the city-box div, append the current weather of searched city
   $("#div1").empty();
@@ -132,7 +138,10 @@ $("#search-button").on("click", function(event) {
 
 
         // day three
-        var date2 = $("<p>").text(response.list[16].dt_txt);
+        var date2 = response.list[16].dt_txt;
+        var slicedate2 = date2.slice(5, 10);
+
+        var date2 = $("<p>").text(slicedate2);
         var weatherIcon2 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[16].weather[0].icon + ".png");
         var weatherType2 = $("<p>").text(response.list[16].weather[0].main);
         // kelvin to °F
@@ -140,14 +149,17 @@ $("#search-button").on("click", function(event) {
         var tempHighF2 = (tempHighInt2 * 9/5) - 459.67;
         var cityHighTemp2 = $("<p>").text(Math.floor(tempHighF2) + " °F");
 
-        var humidity2 = $("<p>").text(response.list[16].main.humidity + "%");
+        var humidity2 = $("<p>").text("Humidity: " + response.list[16].main.humidity + "%");
 
   // Empty the contents of the city-box div, append the current weather of searched city
   $("#div2").empty();
   $("#div2").append(date2, weatherIcon2, weatherType2, cityHighTemp2, humidity2); 
 
         // day four
-        var date3 = $("<p>").text(response.list[24].dt_txt);
+        var date3 = response.list[24].dt_txt;
+        var slicedate3 = date3.slice(5, 10);
+
+        var date3 = $("<p>").text(slicedate3);
         var weatherIcon3 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[24].weather[0].icon + ".png");
         var weatherType3 = $("<p>").text(response.list[24].weather[0].main);
         // kelvin to °F
@@ -155,14 +167,17 @@ $("#search-button").on("click", function(event) {
         var tempHighF3 = (tempHighInt3 * 9/5) - 459.67;
         var cityHighTemp3 = $("<p>").text(Math.floor(tempHighF3) + " °F");
 
-        var humidity3 = $("<p>").text(response.list[24].main.humidity + "%");
+        var humidity3 = $("<p>").text("Humidity: " + response.list[24].main.humidity + "%");
 
   // Empty the contents of the city-box div, append the current weather of searched city
   $("#div3").empty();
   $("#div3").append(date3, weatherIcon3, weatherType3, cityHighTemp3, humidity3); 
 
           // day five
-          var date4 = $("<p>").text(response.list[32].dt_txt);
+          var date4 = response.list[32].dt_txt;
+          var slicedate4 = date4.slice(5, 10);
+  
+          var date4 = $("<p>").text(slicedate4);
           var weatherIcon4 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[32].weather[0].icon + ".png");
           var weatherType4 = $("<p>").text(response.list[32].weather[0].main);
           // kelvin to °F
@@ -170,7 +185,7 @@ $("#search-button").on("click", function(event) {
           var tempHighF4 = (tempHighInt4 * 9/5) - 459.67;
           var cityHighTemp4 = $("<p>").text(Math.floor(tempHighF4) + " °F");
 
-          var humidity4 = $("<p>").text(response.list[32].main.humidity + "%");
+          var humidity4 = $("<p>").text("Humidity: " + response.list[32].main.humidity + "%");
   
     // Empty the contents of the city-box div, append the current weather of searched city
     $("#div4").empty();
