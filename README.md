@@ -1,9 +1,9 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Weather Dashboard
 
 A weather dashboard that will run in the browser and feature dynamically updated HTML and CSS with data from another OpenWeather's API.
 
 
-## Acceptance Criteria
+## Criteria
 
 ```
 GIVEN a weather dashboard with form inputs
