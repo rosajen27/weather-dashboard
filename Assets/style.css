@@ -42,3 +42,30 @@
 .card {
     border: 0px;
 }
+
+.uvFavorable {
+    border: 1 px solid #333;
+    border-radius: 10px;
+    background-color: lightgreen;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.uvModerate {
+    border: 1 px solid #333;
+    border-radius: 10px;
+    background-color: yellow;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.uvSevere {
+    border: 1 px solid #333;
+    border-radius: 10px;
+    background-color: tomato;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
