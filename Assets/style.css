@@ -2,7 +2,6 @@
     background-color:#F8F8F8;
     padding: 20px 30px;
     border-right: 1px solid #333;
-    height: 100vh;
 }
 
 .list-group {
@@ -14,7 +13,6 @@
 }
 
 #city-box {
-    height: 50%;
     border-top: 1px solid #333;
     border-left: 1px solid #333;
     border-bottom: 1px solid #333;
@@ -24,7 +22,6 @@
 }
 
 #five-day-box {
-    height: 50%;
     padding-top: 20px;
     padding-bottom: 30px;
 }
