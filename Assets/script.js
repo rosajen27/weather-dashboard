@@ -16,7 +16,7 @@ window.onload = function () {
             var city = $("#search-input").val();
 
             // construct URL
-            var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
+            var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
 
             // hit the queryURL with $ajax
             //take response data and display it in the city-box within the weather-div
@@ -53,7 +53,7 @@ window.onload = function () {
                   var lon = response.coord.lon;
 
                   // construct URL for UV index
-                  var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?appid=000401db107b5cbe165fdf198e9f1e47&lat=" + lat + "&lon=" + lon;
+                  var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?appid=000401db107b5cbe165fdf198e9f1e47&lat=" + lat + "&lon=" + lon;
 
                   $.ajax({
                         url: queryURL2,
@@ -93,7 +93,7 @@ window.onload = function () {
             var city = $("#search-input").val();
 
             // construct URL
-            var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
+            var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
 
             // hit the queryURL with $ajax
             //take response data and display it in the city-box within the weather-div
@@ -319,7 +319,7 @@ function searchHistory() {
 
 
             // construct URL
-            var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
+            var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
 
             // hit the queryURL with $ajax
             //take response data and display it in the city-box within the weather-div
@@ -353,7 +353,7 @@ function searchHistory() {
                   var lon = response.coord.lon;
 
                   // construct URL for UV index
-                  var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?appid=000401db107b5cbe165fdf198e9f1e47&lat=" + lat + "&lon=" + lon;
+                  var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?appid=000401db107b5cbe165fdf198e9f1e47&lat=" + lat + "&lon=" + lon;
 
                   $.ajax({
                         url: queryURL2,
@@ -386,7 +386,7 @@ function searchHistory() {
             var city = $(this).text();
 
             // construct URL
-            var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
+            var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
 
             // hit the queryURL with $ajax
             //take response data and display it in the city-box within the weather-div
