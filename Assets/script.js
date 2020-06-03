@@ -312,41 +312,41 @@ const saveToLocalStorage4 = () => {
 //THEN I am again presented with current and future conditions for that city
 function searchHistory() {
 
-      $("#city-list").on('click','li',function (){
+      $("#city-list").on('click', 'li', function () {
 
             console.log($(this).text());
             var city = $(this).text();
-      
 
-      // construct URL
-      var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
 
-      // hit the queryURL with $ajax
-      //take response data and display it in the city-box within the weather-div
-      $.ajax({
-            url: queryURL,
-            method: "GET"
+            // construct URL
+            var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=000401db107b5cbe165fdf198e9f1e47";
 
-      }).then(function (response) {
+            // hit the queryURL with $ajax
+            //take response data and display it in the city-box within the weather-div
+            $.ajax({
+                  url: queryURL,
+                  method: "GET"
 
-            // Constructing HTML containing the weather information for searched city
-            var cityName = $("<h2>").text(response.name);
-            var cityNameList = $("<li>").text(response.name);
-            cityNameList.addClass("list-group-item");
+            }).then(function (response) {
 
-            var weatherIcon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + ".png");
-            var weatherType = $("<p>").text(response.weather[0].main);
+                  // Constructing HTML containing the weather information for searched city
+                  var cityName = $("<h2>").text(response.name);
+                  var cityNameList = $("<li>").text(response.name);
+                  cityNameList.addClass("list-group-item");
 
-            // kelvin to F
-            var tempInt = parseInt(response.main.temp);
-            var tempF = (tempInt * 9 / 5) - 459.67;
-            var cityTemp = $("<p>").text("Current Temperature: " + Math.floor(tempF) + " °F");
-            var cityHumidity = $("<p>").text("Humidity: " + response.main.humidity + "%");
-            var cityWindSpeed = $("<p>").text("Wind Speed: " + response.wind.speed + " MPH");
+                  var weatherIcon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + ".png");
+                  var weatherType = $("<p>").text(response.weather[0].main);
 
-            // Empty the contents of the city-box div, append the current weather of searched city
-            $("#city-box").empty();
-            $("#city-box").append(cityName, weatherIcon, weatherType, cityTemp, cityHumidity, cityWindSpeed);
+                  // kelvin to F
+                  var tempInt = parseInt(response.main.temp);
+                  var tempF = (tempInt * 9 / 5) - 459.67;
+                  var cityTemp = $("<p>").text("Current Temperature: " + Math.floor(tempF) + " °F");
+                  var cityHumidity = $("<p>").text("Humidity: " + response.main.humidity + "%");
+                  var cityWindSpeed = $("<p>").text("Wind Speed: " + response.wind.speed + " MPH");
+
+                  // Empty the contents of the city-box div, append the current weather of searched city
+                  $("#city-box").empty();
+                  $("#city-box").append(cityName, weatherIcon, weatherType, cityTemp, cityHumidity, cityWindSpeed);
 
                   // UV INDEX
                   var lat = response.coord.lat;
@@ -375,12 +375,12 @@ function searchHistory() {
                               $("#uv-box").addClass("uvSevere");
                         }
 
+                  });
+            });
       });
-});
-});
 
       // DISPLAY FIVE DAY FORECAST
-      $("#city-list").on('click','li',function (){
+      $("#city-list").on('click', 'li', function () {
 
             console.log($(this).text());
             var city = $(this).text();
