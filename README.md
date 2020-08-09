@@ -8,7 +8,7 @@ A weather dashboard that will run in the browser and feature dynamically updated
 
 Deployed Website: https://rosajen27.github.io/weather-dashboard/
 
-![weather dashboard demo](./Assets/screenshot.JPG)
+![weather dashboard demo](./Assets/screenshot.png)
 
 ## Built With
 
