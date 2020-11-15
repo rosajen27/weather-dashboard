@@ -1,8 +1,6 @@
 # Weather Dashboard
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. 
-
-A weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. OpenWeather API was used to retrieve weather data for cities and incorporated localStorage to store any persistent data.
+A weather dashboard that utilizes OpenWeather API to retrieve weather data for cities and incorporates localStorage to store data.
 
 ## Deployment
 
