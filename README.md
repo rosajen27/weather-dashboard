@@ -1,24 +1,32 @@
-# Weather Dashboard
+# ☀ Weather Dashboard
 
-A weather dashboard that utilizes OpenWeather API to retrieve weather data for cities and incorporates localStorage to store data.
+A weather dashboard that allows the user to search for the current and five day forecast of their searched city. Utilizes OpenWeather API to retrieve weather data for cities and incorporates localStorage to store data.
+
 
 ## Deployment
 
-Deployed Website: https://rosajen27.github.io/weather-dashboard/
+### Version 2
 
+Demo: https://rosajen27.github.io/weather-dashboard/
+
+![weather dashboard demo](./Assets/new-screenshot.png)
+
+### Version 1
 ![weather dashboard demo](./Assets/screenshot.png)
+
 
 ## Built With
 
-  - HTML
-  - CSS
-  - JavaScript
-  - jQuery
-  - OpenWeather API
+  * HTML
+  * CSS
+  * JavaScript
+  * jQuery
+  * OpenWeather API
+
 
 ## Authors
 
-  - **Jennifer Rosa**
+  * **Jennifer Rosa**
     [Rosajen27](https://rosajen27.github.io/)
 
 
@@ -28,7 +36,7 @@ Deployed Website: https://rosajen27.github.io/weather-dashboard/
 
 This project is licensed under the MIT License.
 
-Copyright (c) 2020 Jennifer Rosa
+Copyright (c) 2021 Jennifer Rosa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -48,6 +56,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
 ## Acknowledgments
 
-  - Trilogy Education Services
+  * Trilogy Education Services
