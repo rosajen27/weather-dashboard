@@ -32,12 +32,12 @@ window.onload = function () {
                   cityNameList.addClass("list-group-item");
 
                   var weatherIcon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + ".png");
-                  var weatherType = $("<p>").text(response.weather[0].main);
+                  var weatherType = $("<p class='bold'>").text(response.weather[0].main);
 
                   // kelvin to F
                   var tempInt = parseInt(response.main.temp);
                   var tempF = (tempInt * 9 / 5) - 459.67;
-                  var cityTemp = $("<p>").text("Current Temperature: " + Math.floor(tempF) + " °F");
+                  var cityTemp = $("<p class='temp'>").text(Math.floor(tempF) + "°");
                   var cityHumidity = $("<p>").text("Humidity: " + response.main.humidity + "%");
                   var cityWindSpeed = $("<p>").text("Wind Speed: " + response.wind.speed + " MPH");
 
@@ -111,11 +111,11 @@ window.onload = function () {
 
                   var date0 = $("<p>").text(slicedate0);
                   var weatherIcon0 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + ".png");
-                  var weatherType0 = $("<p>").text(response.list[0].weather[0].main);
-                  // kelvin to °F
+                  var weatherType0 = $("<p class='bold'>").text(response.list[0].weather[0].main);
+                  // kelvin to°
                   var tempHighInt0 = parseInt(response.list[0].main.temp_max);
                   var tempHighF0 = (tempHighInt0 * 9 / 5) - 459.67;
-                  var cityHighTemp0 = $("<p>").text(Math.floor(tempHighF0) + " °F");
+                  var cityHighTemp0 = $("<p class='temp'>").text(Math.floor(tempHighF0) + "°");
 
                   var humidity0 = $("<p>").text("Humidity: " + response.list[0].main.humidity + "%");
 
@@ -129,11 +129,11 @@ window.onload = function () {
 
                   var date1 = $("<p>").text(slicedate1);
                   var weatherIcon1 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[8].weather[0].icon + ".png");
-                  var weatherType1 = $("<p>").text(response.list[8].weather[0].main);
-                  // kelvin to °F
+                  var weatherType1 = $("<p class='bold'>").text(response.list[8].weather[0].main);
+                  // kelvin to°
                   var tempHighInt1 = parseInt(response.list[8].main.temp_max);
                   var tempHighF1 = (tempHighInt1 * 9 / 5) - 459.67;
-                  var cityHighTemp1 = $("<p>").text(Math.floor(tempHighF1) + " °F");
+                  var cityHighTemp1 = $("<p class='temp'>").text(Math.floor(tempHighF1) + "°");
 
                   var humidity1 = $("<p>").text("Humidity: " + response.list[8].main.humidity + "%");
 
@@ -148,11 +148,11 @@ window.onload = function () {
 
                   var date2 = $("<p>").text(slicedate2);
                   var weatherIcon2 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[16].weather[0].icon + ".png");
-                  var weatherType2 = $("<p>").text(response.list[16].weather[0].main);
-                  // kelvin to °F
+                  var weatherType2 = $("<p class='bold'>").text(response.list[16].weather[0].main);
+                  // kelvin to°
                   var tempHighInt2 = parseInt(response.list[16].main.temp_max);
                   var tempHighF2 = (tempHighInt2 * 9 / 5) - 459.67;
-                  var cityHighTemp2 = $("<p>").text(Math.floor(tempHighF2) + " °F");
+                  var cityHighTemp2 = $("<p class='temp'>").text(Math.floor(tempHighF2) + "°");
 
                   var humidity2 = $("<p>").text("Humidity: " + response.list[16].main.humidity + "%");
 
@@ -166,11 +166,11 @@ window.onload = function () {
 
                   var date3 = $("<p>").text(slicedate3);
                   var weatherIcon3 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[24].weather[0].icon + ".png");
-                  var weatherType3 = $("<p>").text(response.list[24].weather[0].main);
-                  // kelvin to °F
+                  var weatherType3 = $("<p class='bold'>").text(response.list[24].weather[0].main);
+                  // kelvin to°
                   var tempHighInt3 = parseInt(response.list[24].main.temp_max);
                   var tempHighF3 = (tempHighInt3 * 9 / 5) - 459.67;
-                  var cityHighTemp3 = $("<p>").text(Math.floor(tempHighF3) + " °F");
+                  var cityHighTemp3 = $("<p class='temp'>").text(Math.floor(tempHighF3) + "°");
 
                   var humidity3 = $("<p>").text("Humidity: " + response.list[24].main.humidity + "%");
 
@@ -184,11 +184,11 @@ window.onload = function () {
 
                   var date4 = $("<p>").text(slicedate4);
                   var weatherIcon4 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[32].weather[0].icon + ".png");
-                  var weatherType4 = $("<p>").text(response.list[32].weather[0].main);
-                  // kelvin to °F
+                  var weatherType4 = $("<p class='bold'>").text(response.list[32].weather[0].main);
+                  // kelvin to°
                   var tempHighInt4 = parseInt(response.list[32].main.temp_max);
                   var tempHighF4 = (tempHighInt4 * 9 / 5) - 459.67;
-                  var cityHighTemp4 = $("<p>").text(Math.floor(tempHighF4) + " °F");
+                  var cityHighTemp4 = $("<p class='temp'>").text(Math.floor(tempHighF4) + "°");
 
                   var humidity4 = $("<p>").text("Humidity: " + response.list[32].main.humidity + "%");
 
@@ -335,12 +335,12 @@ function searchHistory() {
                   cityNameList.addClass("list-group-item");
 
                   var weatherIcon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + ".png");
-                  var weatherType = $("<p>").text(response.weather[0].main);
+                  var weatherType = $("<p class='bold'>").text(response.weather[0].main);
 
                   // kelvin to F
                   var tempInt = parseInt(response.main.temp);
                   var tempF = (tempInt * 9 / 5) - 459.67;
-                  var cityTemp = $("<p>").text("Current Temperature: " + Math.floor(tempF) + " °F");
+                  var cityTemp = $("<p class='temp'>").text("Current Temperature: " + Math.floor(tempF) + "°");
                   var cityHumidity = $("<p>").text("Humidity: " + response.main.humidity + "%");
                   var cityWindSpeed = $("<p>").text("Wind Speed: " + response.wind.speed + " MPH");
 
@@ -404,11 +404,11 @@ function searchHistory() {
 
                   var date0 = $("<p>").text(slicedate0);
                   var weatherIcon0 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + ".png");
-                  var weatherType0 = $("<p>").text(response.list[0].weather[0].main);
-                  // kelvin to °F
+                  var weatherType0 = $("<p class='bold'>").text(response.list[0].weather[0].main);
+                  // kelvin to°
                   var tempHighInt0 = parseInt(response.list[0].main.temp_max);
                   var tempHighF0 = (tempHighInt0 * 9 / 5) - 459.67;
-                  var cityHighTemp0 = $("<p>").text(Math.floor(tempHighF0) + " °F");
+                  var cityHighTemp0 = $("<p class='temp'>").text(Math.floor(tempHighF0) + "°");
 
                   var humidity0 = $("<p>").text("Humidity: " + response.list[0].main.humidity + "%");
 
@@ -422,11 +422,11 @@ function searchHistory() {
 
                   var date1 = $("<p>").text(slicedate1);
                   var weatherIcon1 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[8].weather[0].icon + ".png");
-                  var weatherType1 = $("<p>").text(response.list[8].weather[0].main);
-                  // kelvin to °F
+                  var weatherType1 = $("<p class='bold'>").text(response.list[8].weather[0].main);
+                  // kelvin to°
                   var tempHighInt1 = parseInt(response.list[8].main.temp_max);
                   var tempHighF1 = (tempHighInt1 * 9 / 5) - 459.67;
-                  var cityHighTemp1 = $("<p>").text(Math.floor(tempHighF1) + " °F");
+                  var cityHighTemp1 = $("<p class='temp'>").text(Math.floor(tempHighF1) + "°");
 
                   var humidity1 = $("<p>").text("Humidity: " + response.list[8].main.humidity + "%");
 
@@ -441,11 +441,11 @@ function searchHistory() {
 
                   var date2 = $("<p>").text(slicedate2);
                   var weatherIcon2 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[16].weather[0].icon + ".png");
-                  var weatherType2 = $("<p>").text(response.list[16].weather[0].main);
-                  // kelvin to °F
+                  var weatherType2 = $("<p class='bold'>").text(response.list[16].weather[0].main);
+                  // kelvin to°
                   var tempHighInt2 = parseInt(response.list[16].main.temp_max);
                   var tempHighF2 = (tempHighInt2 * 9 / 5) - 459.67;
-                  var cityHighTemp2 = $("<p>").text(Math.floor(tempHighF2) + " °F");
+                  var cityHighTemp2 = $("<p class='temp'>").text(Math.floor(tempHighF2) + "°");
 
                   var humidity2 = $("<p>").text("Humidity: " + response.list[16].main.humidity + "%");
 
@@ -459,11 +459,11 @@ function searchHistory() {
 
                   var date3 = $("<p>").text(slicedate3);
                   var weatherIcon3 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[24].weather[0].icon + ".png");
-                  var weatherType3 = $("<p>").text(response.list[24].weather[0].main);
-                  // kelvin to °F
+                  var weatherType3 = $("<p class='bold'>").text(response.list[24].weather[0].main);
+                  // kelvin to°
                   var tempHighInt3 = parseInt(response.list[24].main.temp_max);
                   var tempHighF3 = (tempHighInt3 * 9 / 5) - 459.67;
-                  var cityHighTemp3 = $("<p>").text(Math.floor(tempHighF3) + " °F");
+                  var cityHighTemp3 = $("<p class='temp'>").text(Math.floor(tempHighF3) + "°");
 
                   var humidity3 = $("<p>").text("Humidity: " + response.list[24].main.humidity + "%");
 
@@ -477,11 +477,11 @@ function searchHistory() {
 
                   var date4 = $("<p>").text(slicedate4);
                   var weatherIcon4 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.list[32].weather[0].icon + ".png");
-                  var weatherType4 = $("<p>").text(response.list[32].weather[0].main);
-                  // kelvin to °F
+                  var weatherType4 = $("<p class='bold'>").text(response.list[32].weather[0].main);
+                  // kelvin to°
                   var tempHighInt4 = parseInt(response.list[32].main.temp_max);
                   var tempHighF4 = (tempHighInt4 * 9 / 5) - 459.67;
-                  var cityHighTemp4 = $("<p>").text(Math.floor(tempHighF4) + " °F");
+                  var cityHighTemp4 = $("<p class='temp'>").text(Math.floor(tempHighF4) + "°");
 
                   var humidity4 = $("<p>").text("Humidity: " + response.list[32].main.humidity + "%");
 
